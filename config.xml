@@ -17,21 +17,24 @@
     <author href="https://build.phonegap.com" email="johnflottmeyer@gmail.com">
         John Flottmeyer
     </author>
-    
     <gap:platform name="ios" />
+    
     
     <!-- third party plugins -->
 	<gap:plugin name="cordova-plugin-statusbar" source="npm" />
+    <gap:plugin name="phonegap-plugin-barcodescanner" source="npm"/>
     
-     <!-- universal preferences -->
+    <!-- universal preferences -->
     <preference name="phonegap-version" value="cli-6.5.0"/> 
     <preference name="orientation" value="portrait" /> 
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <preference name="webviewbounce"    value="false" />
     
     <!--<preference name="fullscreen"                 value="true" />-->
     <preference name="fullscreen" value="false" />
     
     <!-- ios preferences --> 
-    <preference name="target-device" value="universal" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
     
