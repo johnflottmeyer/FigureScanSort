@@ -75,7 +75,7 @@ var app = {
             }
             */
             //lets send the code to the code look up function
-            document.getElementById("scan").innerHTML = searchBarCode(result.text);
+            document.getElementById("scaninfo").innerHTML = searchBarCode(result.text);
 
         }, function (error) { 
             console.log("Scanning failed: ", error); 
