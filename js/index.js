@@ -58,10 +58,10 @@ var app = {
 
         scanner.scan( function (result) { 
 
-            alert("We got a barcode\n" + 
+            /*alert("We got a barcode\n" + 
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
-            "Cancelled: " + result.cancelled);  
+            "Cancelled: " + result.cancelled); */ 
 
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
@@ -75,7 +75,7 @@ var app = {
             }
             */
             //lets send the code to the code look up function
-            searchBarCode(result.text);
+            document.getElementById("scan").innerHTML = searchBarCode(result.text);
 
         }, function (error) { 
             console.log("Scanning failed: ", error); 
