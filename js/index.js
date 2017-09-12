@@ -74,6 +74,8 @@ var app = {
                 window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
             }
             */
+            //lets send the code to the code look up function
+            searchBarCode(result.text);
 
         }, function (error) { 
             console.log("Scanning failed: ", error); 
