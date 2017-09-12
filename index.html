@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort Figurines</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="utf-8">
+<head>
+<!--<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">-->
+<!--<link rel="shortcut icon" href="../favicon.ico">-->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script type="text/javascript" src="js/index.js"></script>-->
+<script type="text/javascript" src="js/requestBar.js"></script>
+<!--<link rel="stylesheet" href="css/style.css">-->
+<!-- Fav and touch icons -->
+<!--<link rel="shortcut icon" href="images/ico/favicon.ico">-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+<!-- Start of first page -->
+<div data-role="page" id="home">
+
+<div data-role="header" id="head">
+<a href="#options" id="options" class="ui-btn ui-btn-icon-left ui-icon-gear">Options</a><h1>Home</h1><span class="ui-li-count"></span></div>
+<div role="main" class="ui-content">
+      <div class="ui-body ui-body-a ui-corner-all"> 
+      <div class="introtext"> 
+<h3>Scan a Barcode</h3>
+<p>Usage text</p>
+      </div>
+      <div id="cards"><ul></ul></div>
+      </div>
+</div>
+<div class="cookiedata"></div>
+<div data-role="footer" class="nav-glyphish-example" data-theme="b" data-position="fixed">
+    <div data-role="controlgroup" data-type="horizontal" data-grid="b" data-mini="true">
+    <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-icon-left ui-icon-recycle shuffle">Shuffle</a>
+    <a href="#mypanel" id="settings" class="ui-btn ui-btn-icon-left ui-icon-bars ui-mini">Deck</a>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
