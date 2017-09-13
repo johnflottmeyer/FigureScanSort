@@ -14,18 +14,19 @@ function searchBarCode(upc){
 	        //console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
+	         $("#scaninfo").html(JSON.stringify(resp, null, 4));
 	        var code = resp.code;
 	        var total = resp.total;
 	        alert(code + " - " + total);
 	        if(code == "OK"){
 		        if(total > 0){
-			        result = "results found for "+resp.ITEMS.TITLE;
+			        result = "results found for "+resp.items.title;
 		        }else{
 			        result = "Code ok: nothing found";
 		        }
 	        }
-	        $("#result").html(result);
-	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
+	        $("#result").html(result + "::");
+	       
 	        //if(resp.success == true){//now lets mark the columns that we saved.
 		        
 		    //}
