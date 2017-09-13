@@ -17,6 +17,7 @@ function searchBarCode(upc){
 	         $("#scaninfo").html(JSON.stringify(resp, null, 4));
 	        var code = resp.code;
 	        var total = resp.total;
+	        var title = resp.items.title;
 	        alert(code + " - " + total);
 	        if(code == "OK"){
 		        if(total > 0){
