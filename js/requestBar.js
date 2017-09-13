@@ -14,8 +14,8 @@ function searchBarCode(upc){
 	        //console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	        console.log(JSON.stringify(resp, null, 4));
-	        obj = JSON.parse(resp.responseText);
+	        var obj = JSON.parse(resp.responseText);
+	        console.log(obj);
 			alert(obj.items.title);
 	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
 	        var code = obj.code;
