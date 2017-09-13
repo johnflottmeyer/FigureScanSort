@@ -11,16 +11,16 @@ function searchBarCode(upc){
 	    url: 'https://api.upcitemdb.com/prod/trial/lookup',
 	    data: "upc=" + upc,
 	    success: function (resp) {
-	        //console.log("Debug:" + resp);
+	        console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	        var obj = jQuery.parseJSON(resp);
+	        var obj = $.parseJSON(resp);
 	        console.log(obj);
-			alert(obj.items.title);
+			//alert(obj.items.title);
 	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
 	        var code = obj.code;
 	        var total = obj.total;
-	        var title = obj.items.title;
+	        var title = resp.items.title;
 	        alert(code + " - " + total + " - " + title);
 	        if(code == "OK"){
 		        if(total > 0){
