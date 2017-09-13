@@ -12,8 +12,8 @@ function searchBarCode(upc){
 	    data: "upc=" + upc,
 	    success: function (resp) {
 	        //console.log("Debug:" + resp);
-	        //alert(JSON.stringify(resp, null, 4));
-	        return resp;
+	        alert(JSON.stringify(resp, null, 4));
+	        //return resp;
 	        
 	        //if(resp.success == true){//now lets mark the columns that we saved.
 		        
