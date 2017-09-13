@@ -14,11 +14,13 @@ function searchBarCode(upc){
 	        //console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	         $("#scaninfo").html(JSON.stringify(resp, null, 4));
-	        var code = resp.code;
-	        var total = resp.total;
-	        var title = resp.items.title;
 	        console.log(JSON.stringify(resp, null, 4));
+	        obj = JSON.parse(resp.responseText);
+			alert(obj.items.title);
+	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
+	        var code = obj.code;
+	        var total = obj.total;
+	        var title = obj.items.title;
 	        alert(code + " - " + total + " - " + title);
 	        if(code == "OK"){
 		        if(total > 0){
