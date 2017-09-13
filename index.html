@@ -19,26 +19,31 @@
 <div data-role="page" id="home">
 
 <div data-role="header" id="head">
-<h1>Scan a box</h1>
+<h1>Figurine Box Scanner</h1>
+</div>
+<div id="deviceready" class="blink">
+    <p class="event listening">Connecting to Device</p>
+    <p class="event received">Device is Ready</p>
 </div>
 <div role="main" class="ui-content">
       <div class="ui-body ui-body-a ui-corner-all"> 
       <div class="introtext"> 
 <h3>Scan a Barcode</h3>
-<div id="deviceready" class="blink">
-    <p class="event listening">Connecting to Device</p>
-    <p class="event received">Device is Ready</p>
-</div>
-<p id="info"></p>
-<p id="scaninfo"></p>
+<p>Select a barcode to scan</p>
+
+<p id="info">barcode found</p>
+<p id="result">results found</p>
+<p id="scaninfo">results details</p>
       </div>
       </div>
 </div>
 <div class="cookiedata"></div>
 <div data-role="footer" class="nav-glyphish-example" data-theme="b" data-position="fixed">
     <div data-role="controlgroup" data-type="horizontal" data-grid="b" data-mini="true">
-    <a href="#" class="topcoat-button" id="scan">SCAN</a>
-    <a href="#" class="topcoat-button" id="encode">ENCODE</a>
+    <a href="#" class="topcoat-button ui-mini ui-btn" id="scan">SCAN</a>
+    <!--<a href="#" class="topcoat-button" id="encode">ENCODE</a>-->
+    <a href="#" class="topcoat-button ui-mini ui-btn" id="manual">ENTER MANUALLY</a>
+    <a href="#" class="topcoat-button ui-mini ui-btn" id="add">ADD TO LIST</a>
     </div>
 </div>
 

@@ -41,10 +41,24 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     width:100%;
 }
-
+#info{
+	background:pink;
+	padding:3px;
+	margin:0px;
+}
+#result{
+	background:#EBEBEB;
+	padding:3px;
+	margin:0px;
+}
+#scaninfo{
+	background:#CCCCCC;
+	padding:3px;
+	margin:0px;
+}
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -79,12 +93,10 @@ h1 {
 }
 
 .event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
     color:#FFFFFF;
     font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+    margin:0px 0px;
+    padding:2px 5px;
 }
 
 .event.listening {

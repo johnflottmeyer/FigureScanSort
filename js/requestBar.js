@@ -12,8 +12,18 @@ function searchBarCode(upc){
 	    data: "upc=" + upc,
 	    success: function (resp) {
 	        //console.log("Debug:" + resp);
-	        alert(JSON.stringify(resp, null, 4));
+	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
+	        var code = resp.CODE;
+	        var total = resp.TOTAL;
+	        if(code == "OK"){
+		        if(total > 0){
+			        result = "results found for "+resp.ITEMS.TITLE;
+		        }else{
+			        result = "Code ok: nothing found";
+		        }
+	        }
+	        document.getElementById("result").innerHTML = result;
 	        document.getElementById("scaninfo").innerHTML = JSON.stringify(resp, null, 4);
 	        //if(resp.success == true){//now lets mark the columns that we saved.
 		        
