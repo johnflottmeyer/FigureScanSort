@@ -14,8 +14,9 @@ function searchBarCode(upc){
 	        //console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	        var code = resp.CODE;
-	        var total = resp.TOTAL;
+	        var code = resp.code;
+	        var total = resp.total;
+	        alert(code + " - " + total);
 	        if(code == "OK"){
 		        if(total > 0){
 			        result = "results found for "+resp.ITEMS.TITLE;
@@ -23,8 +24,8 @@ function searchBarCode(upc){
 			        result = "Code ok: nothing found";
 		        }
 	        }
-	        document.getElementById("result").innerHTML = result;
-	        document.getElementById("scaninfo").innerHTML = JSON.stringify(resp, null, 4);
+	        $("#result").html(result);
+	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
 	        //if(resp.success == true){//now lets mark the columns that we saved.
 		        
 		    //}
