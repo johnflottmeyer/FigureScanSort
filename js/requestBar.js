@@ -14,12 +14,12 @@ function searchBarCode(upc){
 	        console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	        var obj = $.parseJSON(resp);
-	        console.log(obj);
+	        //var obj = $.parseJSON(resp);
+	        //console.log(obj);
 			//alert(obj.items.title);
 	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
-	        var code = obj.code;
-	        var total = obj.total;
+	        var code = resp.code;
+	        var total = resp.total;
 	        var title = resp.items.title;
 	        alert(code + " - " + total + " - " + title);
 	        if(code == "OK"){
