@@ -18,12 +18,13 @@ function searchBarCode(upc){
 	        var code = resp.code;
 	        var total = resp.total;
 	        var title = resp.items.title;
-	        alert(code + " - " + total);
+	        alert(code + " - " + total + " - " + title);
 	        if(code == "OK"){
 		        if(total > 0){
-			        result = "results found for "+resp.items.title;
+			        result = "results found";
+			        //+resp.items.title;
 		        }else{
-			        result = "Code ok: nothing found";
+			        result = "Code ok: but nothing found";
 		        }
 	        }
 	        $("#result").html(result + "::");
