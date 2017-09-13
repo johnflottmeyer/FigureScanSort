@@ -14,7 +14,7 @@ function searchBarCode(upc){
 	        //console.log("Debug:" + resp);
 	        alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	        
+	        document.getElementById("scaninfo").innerHTML = JSON.stringify(resp, null, 4);
 	        //if(resp.success == true){//now lets mark the columns that we saved.
 		        
 		    //}
