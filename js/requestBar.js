@@ -10,11 +10,11 @@ $(".searchBar").on('click', function(){
 });
 
 function buildRow(t,d,b,s,w){
-	$('.junktable').append('<tr><td>Title:<td><td>'+t+'</td></tr>');
-	$('.junktable').append('<tr><td>Description:<td><td>'+d+'</td></tr>');
-	$('.junktable').append('<tr><td>Brand:<td><td>'+b+'</td></tr>');
-	$('.junktable').append('<tr><td>Size:<td><td>'+s+'</td></tr>');
-	$('.junktable').append('<tr><td>Weight:<td><td>'+w+'</td></tr>');
+	$('.junktable').append('<tr><td>Title:</td><td>'+t+'</td></tr>');
+	$('.junktable').append('<tr><td>Description:</td><td>'+d+'</td></tr>');
+	$('.junktable').append('<tr><td>Brand:</td><td>'+b+'</td></tr>');
+	$('.junktable').append('<tr><td>Size:</td><td>'+s+'</td></tr>');
+	$('.junktable').append('<tr><td>Weight:</td><td>'+w+'</td></tr>');
 	$('.junktable').append('<tr><td><a href="#" class="ui-btn add ui-state-disabled">Add to List</a></td><td><a href="#" class="ui-btn create ui-state-disabled">Create List</a></td></tr>');
 }
 //post the request
