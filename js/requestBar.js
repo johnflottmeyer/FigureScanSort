@@ -17,10 +17,15 @@ function searchBarCode(upc){
 	        //var obj = $.parseJSON(resp);
 	        //console.log(obj);
 			//alert(obj.items.title);
-	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
+			$.each($.parseJSON(response), function(key,obj) { 
+				//$.parseJSON() method is needed unless chrome is throwing error.
+                $("#scaninfo").append("<td>"+ obj[key] +"</td>");
+            });
+	        //$("#scaninfo").html(JSON.stringify(resp, null, 4));
+	        console.log(JSON.stringify(resp, null, 4));
 	        var code = resp.code;
 	        var total = resp.total;
-	        var title = resp.items.title;
+	        var title = resp.items.description;
 	        alert(code + " - " + total + " - " + title);
 	        if(code == "OK"){
 		        if(total > 0){
