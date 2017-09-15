@@ -42,6 +42,6 @@ function searchBarCode(upc){
 			$.mobile.loading("hide");
 			console.log("Debug: error" + JSON.stringify(e, null, 4));
 		}
-		dataType: "json"
+		//dataType: "json"
 	});
 }
