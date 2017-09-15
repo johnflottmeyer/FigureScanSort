@@ -17,7 +17,7 @@ function searchBarCode(upc){
 	        //var obj = $.parseJSON(resp);
 	        //console.log(obj);
 			//alert(obj.items.title);
-			$.each($.parseJSON(response), function(key,obj) { 
+			$.each($.parseJSON(resp), function(key,obj) { 
 				//$.parseJSON() method is needed unless chrome is throwing error.
                 $("#scaninfo").append("<td>"+ obj[key] +"</td>");
             });
