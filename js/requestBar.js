@@ -14,7 +14,7 @@ function searchBarCode(upc){
 	        console.log("Debug:" + resp);
 	        //alert(JSON.stringify(resp, null, 4));
 	        //return resp;
-	        //var obj = $.parseJSON(resp);
+	        var obj = $.parseJSON(resp);
 	        //console.log(obj);
 			//alert(obj.items.title);
 	        $("#scaninfo").html(JSON.stringify(resp, null, 4));
@@ -42,5 +42,6 @@ function searchBarCode(upc){
 			$.mobile.loading("hide");
 			console.log("Debug: error" + JSON.stringify(e, null, 4));
 		}
+		dataType: "json"
 	});
 }
