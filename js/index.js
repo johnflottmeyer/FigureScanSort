@@ -67,6 +67,7 @@ var app = {
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
+                
             document.getElementById("info").innerHTML = result.text;
             console.log(result);
             /*
